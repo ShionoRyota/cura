@@ -1,0 +1,31 @@
+<div class="sitename">
+  <div class="container">
+    <a href="#">く〜ら</a>
+  </div>
+</div>
+
+<!-- Static navbar -->
+<div class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+    </div>
+   <div class="navbar-collapse collapse">
+
+    <ul class="nav navbar-nav">
+        <li><a href="/">マイページ</a></li>
+        <li><%= link_to "ログアウト",  destroy_worker_session_path, method: :delete %></li>
+     <!-- <ul class="nav navbar-nav">
+     <li><a href="#"><i class="fa fa-home"></i> ヘルパーログイン</a></li>
+     <li><a href="#about"><i class="fa fa-info"></i> 新規登録</a></li>
+     <li><a href="#about"><i class="fa fa-jpy"></i>利用者ログイン</a></li>
+     <li><a href="#contact"><i class="fa fa-comments-o"></i>新規登録</a></li>
+     </ul> -->
+   </div><!--/.nav-collapse -->
+ </div>
+</div>
