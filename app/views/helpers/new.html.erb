@@ -1,0 +1,7 @@
+<%= render 'new' %>
+<%= form_for (@helper) do |h| %>
+ <%= h.datetime_select :start %>
+ <%= h.time_select :finish %>
+ <%= h.text_field :text %>
+ <%= h.submit "Send" %>
+<% end %>
