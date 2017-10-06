@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # devise_for :personals
   # devise_for :workers
 
@@ -15,6 +16,7 @@ devise_for :personals, controllers: {
 
   resources :helpers
   resources :users
+  resources :workers
   root 'homes#top'
   get 'homes/top'
 end

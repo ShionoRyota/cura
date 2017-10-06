@@ -1,0 +1,27 @@
+<%= form_for(@worker) do |f| %>
+
+<div class="field">
+    <%= f.label :氏名 %><br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :年齢 %><br />
+    <%= f.select :nennrei,options_for_select((20..50).to_a),{include_blank: '年齢を選択してください'} %>
+  </div>
+
+  <%= f.label :性別 %><br />
+    <%= f.text_field :gender %>
+  </div>
+
+  <%= f.label :画像 %><br />
+    <%= f.text_field :image %>
+  </div>
+
+  <%= f.label :自己紹介 %><br />
+    <%= f.text_field :introduce %>
+  </div>
+
+  <%= f.submit "Sign up" %>
+
+  <% end %>
