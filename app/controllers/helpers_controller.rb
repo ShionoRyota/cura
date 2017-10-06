@@ -8,7 +8,8 @@ class HelpersController < ApplicationController
 	end
 
 	def create
-		@helper = Helper.new(create_params)
+		# @helper = Helper.new(start: create_params[:start], finish: create_params[:finish], text: create_params[:text], woker_id: current_worker.id)
+		@helper = current_worker.helpers.build(create_params)
 		@helper.save
 	end
 
