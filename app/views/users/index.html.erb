@@ -4,7 +4,7 @@
 
 <% @worker.each do |helper| %>
 	<h1><%= helper.worker.name %></h1>
-
+    <%= helper.worker.image %>
 	<p><%= helper.start %></p>
 	<p><%= helper.finish %></p>
 	<%= helper.text %>
