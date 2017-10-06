@@ -1,6 +1,6 @@
 class HelpersController < ApplicationController
 	def index
-		@helper = Helper.all
+		@worker = Helper.includes(:worker)
 	end
 
 	def new

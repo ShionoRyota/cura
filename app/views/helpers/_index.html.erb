@@ -20,6 +20,7 @@
     <ul class="nav navbar-nav">
         <li><a href="/helpers/new">掲載する</a></li>
         <li><a href="/helpers">マイページ</a></li>
+        <li><%= link_to "プロフィール",  edit_worker_path(current_worker.id) %></li>
         <li><%= link_to "ログアウト",  destroy_worker_session_path, method: :delete %></li>
      <!-- <ul class="nav navbar-nav">
      <li><a href="#"><i class="fa fa-home"></i> ヘルパーログイン</a></li>

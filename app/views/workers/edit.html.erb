@@ -10,14 +10,17 @@
     <%= f.select :nennrei,options_for_select((20..50).to_a),{include_blank: '年齢を選択してください'} %>
   </div>
 
-  <%= f.label :性別 %><br />
-    <%= f.text_field :gender %>
+  <div class="field">
+    <%= f.label :性別 %><br />
+    <%= f.select :gender,options_for_select(["男","女"]),{include_blank: '性別を選択してください'} %>
   </div>
 
+  <div class="field">
   <%= f.label :画像 %><br />
-    <%= f.text_field :image %>
+    <%= f.file_field :image %>
   </div>
 
+  <div class="field">
   <%= f.label :自己紹介 %><br />
     <%= f.text_field :introduce %>
   </div>

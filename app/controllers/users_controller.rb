@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 	def index
-	  @user = User.all
+	  @worker = Helper.joins(:worker)
 	end
 
 	def new

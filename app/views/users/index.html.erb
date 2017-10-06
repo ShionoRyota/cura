@@ -1,1 +1,11 @@
 <%= render 'index' %>
+
+
+
+<% @worker.each do |helper| %>
+	<h1><%= helper.worker.name %></h1>
+
+	<p><%= helper.start %></p>
+	<p><%= helper.finish %></p>
+	<%= helper.text %>
+<% end %>
