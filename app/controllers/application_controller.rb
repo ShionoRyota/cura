@@ -25,14 +25,5 @@ def after_sign_up_path_for(resource)
  	end
 end
 
-protected
-
-  def devise_parameter_sanitizer
-    if resource_class == User
-      UserParameterSanitizer.new(User, :user, params)
-    else
-      super # Use the default one
-    end
-
 
 end
