@@ -48,6 +48,7 @@ group :development do
   gem 'hirb-unicode'
   gem 'devise'
   gem 'awesome_print'
+  gem 'paperclip'
 end
 
 gem 'bootstrap-sass', '~> 3.3.6'

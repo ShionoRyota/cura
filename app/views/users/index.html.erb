@@ -3,9 +3,9 @@
 
 
 <% @worker.each do |helper| %>
-	<h1><%= helper.worker.name %></h1>
-    <%= helper.worker.image %>
+    <p><%= image_tag helper.worker.avatar(:medium) %></p>
+    <h1><%= helper.worker.name %></h1>
 	<p><%= helper.start %></p>
 	<p><%= helper.finish %></p>
-	<%= helper.text %>
+	<p><%= helper.text %></p><br><br><br>
 <% end %>
