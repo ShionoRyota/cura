@@ -1,6 +1,5 @@
 class HelpersController < ApplicationController
 	def index
-		@worker = Helper.includes(:worker)
 	end
 
 	def new
@@ -12,6 +11,7 @@ class HelpersController < ApplicationController
 		@helper = current_worker.helpers.build(create_params)
 		@helper.save
 	end
+
 
 
 	private
