@@ -17,6 +17,7 @@ devise_for :personals, controllers: {
   resources :helpers
   resources :users
   resources :workers
+  resources :personals
   root 'homes#top'
   get 'homes/top'
 end

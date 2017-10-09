@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 .sitename{
 margin:15px 0 15px;
 }
@@ -40,3 +43,68 @@ color: #00BFFF;
 border-right: 0;
 border-radius: 0 3px 3px 0;
 }
+
+.content {
+	background-color: white;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 20px;
+
+	.moji {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.shousai {
+		font-size: 20px;
+		margin-top: 20px;
+		margin-bottom: 120px;
+	}
+}
+
+
+.contenta {
+	background-color: white;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 20px;
+
+
+.mojia {
+	font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .mojian {
+  	font-size: 20px;
+  	margin-top: 20px;
+    margin-bottom: 120px;
+  }
+
+  .form {
+  	margin-bottom: 360px;
+
+  .fm {
+  	margin-top: 50px;
+  }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

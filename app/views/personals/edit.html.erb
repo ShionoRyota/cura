@@ -1,4 +1,4 @@
-<%= form_for(@worker) do |f| %>
+<%= form_for(@personal) do |f| %>
 
 <div class="field">
     <%= f.label :氏名 %><br />
@@ -16,8 +16,8 @@
   </div>
 
   <div class="field">
-  <%= f.label :画像 %><br />
-    <%= f.file_field :avatar %>
+  <%= f.label :住所 %><br />
+    <%= f.text_field :adress %>
   </div>
 
   <div class="field">
@@ -25,6 +25,6 @@
     <%= f.text_field :introduce %>
   </div>
 
-  <%= f.submit "Sign up" %>
+  <%= f.submit "登録" %>
 
   <% end %>
