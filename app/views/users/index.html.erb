@@ -1,16 +1,1 @@
 <%= render 'index' %>
-
-
-<div class="content">
- <% @worker.each do |helper| %>
-    <%= image_tag helper.worker.avatar(:medium) %>
-    <h1>氏名:   <%= helper.worker.name %></h1>
-    <div class="moji">年齢:   <%= helper.worker.nennrei %>歳</div>
-    <div class="moji">性別:   <%= helper.worker.gender %></div>
-    <div class="moji">自己紹介:   <%= helper.worker.introduce %></div>
-	<div class="moji">開始日時:   <%= helper.start %></div>
-	<div class="moji">終了時刻:   <%= helper.finish %></div>
-	<div class="moji">コメント欄:   <%= helper.text %></div>
-	<div class="shousai"><%= link_to "詳細ページへ", "/users/#{helper.id}", method: :get %></div>
- <% end %>
-</div>

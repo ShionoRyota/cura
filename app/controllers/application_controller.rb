@@ -10,9 +10,9 @@ end
 def after_sign_in_path_for(resource)
 	case resource
 	when Worker
- 		helpers_path(resource)
+ 		helpers_path
  	when Personal
- 	 	users_path(resource)
+ 	 	helpers_path
  	end
 end
 

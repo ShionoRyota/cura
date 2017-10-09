@@ -14,8 +14,9 @@ devise_for :personals, controllers: {
   registrations: 'personals/registrations'
 }
 
-  resources :helpers
-  resources :users
+  resources :helpers do
+    resources :users
+  end
   resources :workers
   resources :personals
   root 'homes#top'
