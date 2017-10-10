@@ -11,6 +11,15 @@
 		<div class="moji">コメント欄:   <%= @helper.text %></div>
 </div>
 
+<div class="content">
 <% @request.each do |request| %>
-<%= request.text %>
+    <h1>氏名:   <%= request.personal.name %></h1>
+	<div class="moji">年齢:   <%= request.personal.nennrei %>歳</div>
+	<div class="moji">性別:   <%= request.personal.gender %></div>
+	<div class="moji">住所:   <%= request.personal.adress %></div>
+	<div class="moji">自己紹介:   <%= request.personal.introduce %></div>
+ <div class="moji">開始日時:   <%= request.start %></div>
+ <div class="moji">終了時刻:   <%= request.finish %></div>
+ <div class="moji">コメント欄:   <%= request.text %></div><br><br><br><br><br><br>
 <% end %>
+</div>
