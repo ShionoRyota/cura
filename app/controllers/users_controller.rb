@@ -9,6 +9,8 @@ class UsersController < ApplicationController
 	end
 
 	def create
+		@helper = Helper.find(params[:helper_id])
+	 @helper.update(personal_id: current_personal.id)
 	 # @user = User.create(start: create_params[:start], finish: create_params[:finish], text: create_params[:text], personal_id: current_user.personal_id)
 	 @user = current_personal.users.build(create_params)
 	 @user.save

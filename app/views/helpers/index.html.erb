@@ -21,6 +21,7 @@
 
 	<div class="content">
 	 <% @worker.each do |helper| %>
+	 <% if helper.personal_id == nil %>
 	 	<!-- form_tag("/users/new/") -->
 	    <%= image_tag helper.worker.avatar(:medium) %>
 	    <h1>氏名:   <%= helper.worker.name %></h1>
@@ -31,6 +32,7 @@
 		<div class="moji">終了時刻:   <%= helper.finish %></div>
 		<div class="moji">コメント欄:   <%= helper.text %></div>
 		<div class="shousai"><%= link_to "詳細ページへ", "/helpers/#{helper.id}/users/new", method: :get %></div>
+		<% end %>
 	 <% end %>
 	</div>
 <% end %>

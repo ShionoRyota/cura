@@ -15,7 +15,6 @@ class HelpersController < ApplicationController
 		# @helper = Helper.new(start: create_params[:start], finish: create_params[:finish], text: create_params[:text], worker_id: current_worker.id)
 		@helper = current_worker.helpers.build(create_params)
 		@helper.save
-		redirect_to helpers_path
 	end
 
 	def show
